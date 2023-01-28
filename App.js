@@ -1,46 +1,7 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import MainPage from './pages/MainPage';
+import AboutPage from './pages/AboutPage';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.containerOne}>
-
-      </View>
-      <View style={styles.containerTwo}>
-        <View style={styles.innerOne}>
-         
-        </View>
-        <View style={styles.innerTwo}>
-          <Text>!!컨텐츠!!</Text>
-        </View>
-
-      </View>
-    </View>
-  );
+export default function App(){
+  return (<AboutPage/>)
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1
-  },
-  containerOne: {
-    flex:1,
-    backgroundColor:"red"
-  },
-  containerTwo:{
-    flex:2,
-    flexDirection:"row",
-    backgroundColor:"yellow"
-  },
-  innerOne: {
-    flex:1,
-    backgroundColor:"blue"
-  },
-  innerTwo: {
-    flex:4,
-    justifyContent:"flex-start", // flex-end , center 
-    flexDirection : "row",  // column
-    backgroundColor:"orange"
-  }
-});
